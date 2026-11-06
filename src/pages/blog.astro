@@ -1,5 +1,5 @@
 ---
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 const pageTitle = "私のブログ";
@@ -12,7 +12,7 @@ const pageTitle = "私のブログ";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
 
     <h1>{pageTitle}</h1>
     <p>ここには、私がAstroを学んでいく旅の様子を投稿します。</p>
@@ -22,5 +22,8 @@ const pageTitle = "私のブログ";
       <li><a href="/posts/post-3/">記事3</a></li>
     </ul>
     <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
